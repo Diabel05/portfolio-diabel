@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Amsatou Diabel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="assets/fav1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2 class="logo">Amsatou Diabel</h2>
+    <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+    <ul>
+        <li><a href="index.html">Présentation</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="projets.html" class="active">Projets</a></li>
+        <li><a href="experiences.html">Expériences</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="container">
+    <h1 class="section-title">Mes Projets</h1>
+
+    <div class="card form-card search-box">
+        <h3><i class="fas fa-search"></i> Rechercher un projet</h3>
+        <form id="recherche-form" class="horizontal-form">
+            <input type="text" placeholder="Mots-clés (ex: PHP, Cisco...)">
+            <select>
+                <option value="">Toutes les catégories</option>
+                <option value="web">Développement Web</option>
+                <option value="reseau">Réseau & Sécurité</option>
+                <option value="linux">Administration Linux</option>
+            </select>
+            <button type="submit">Filtrer</button>
+        </form>
+    </div>
+
+    <div class="projects">
+        <div class="card fade-in">
+            <img src="assets/projet_html.jpeg" alt="Site immobilier">
+            <h3>Site immobilier</h3>
+            <p>Développement d'un site immobilier dynamique avec HTML, CSS et PHP. Filtrage par type et localisation.</p>
+        </div>
+
+        <div class="card fade-in">
+            <img src="assets/projet_cisco.jpeg" alt="Simulation réseau">
+            <h3>Simulation réseau Cisco</h3>
+            <p>Configuration de topologies, routeurs et switchs sous Packet Tracer. Focus sécurité réseau.</p>
+        </div>
+
+        <div class="card fade-in">
+            <img src="assets/projet_linux.jpeg" alt="Kali Linux">
+            <h3>Projet Kali Linux</h3>
+            <p>Analyse de cybersécurité : utilisation de Nmap pour détecter les vulnérabilités serveurs.</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 Amsatou Diabel. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
